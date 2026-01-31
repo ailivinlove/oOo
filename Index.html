@@ -1,1 +1,395 @@
-...
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oOo - Lyrics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap');
+
+```
+    body {
+        font-family: 'Courier Prime', 'Courier New', monospace;
+        background: #1a1612;
+        color: #d4c5b0;
+        line-height: 1.7;
+        margin: 0;
+        padding: 20px;
+        background-image: 
+            repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.01) 2px, rgba(255,255,255,0.01) 4px);
+    }
+
+    .container {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        margin-bottom: 80px;
+        position: relative;
+    }
+
+    .logo-circle {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto 40px;
+        position: relative;
+        filter: contrast(1.1);
+    }
+
+    .circle-outer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border: 3px solid #8a7a6a;
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+
+    .circle-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        height: 75%;
+        border: 2px solid #8a7a6a;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+
+    .circle-swirl {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(15deg);
+        width: 90%;
+        height: 90%;
+        border: 2px solid #6a5a4a;
+        border-radius: 50%;
+        opacity: 0.3;
+        border-style: dashed;
+    }
+
+    .ooo-symbol {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Special Elite', 'Courier New', monospace;
+        font-size: 4em;
+        color: #d4c5b0;
+        filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.8));
+    }
+
+    .o-small {
+        font-size: 0.4em;
+        vertical-align: middle;
+    }
+
+    .o-large {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-family: 'Special Elite', 'Courier New', monospace;
+        font-size: 1.4em;
+        font-weight: normal;
+        letter-spacing: 12px;
+        color: #a39580;
+        margin: 20px 0 10px;
+        text-transform: uppercase;
+    }
+
+    .divider {
+        width: 60%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #4a3a2a, transparent);
+        margin: 60px auto;
+    }
+
+    .song-collection {
+        margin-bottom: 100px;
+    }
+
+    .song {
+        margin-bottom: 100px;
+        padding: 40px 30px;
+        background: rgba(42, 35, 28, 0.3);
+        border-left: 4px solid #6a5a4a;
+        border-right: 1px solid rgba(106, 90, 74, 0.2);
+        position: relative;
+    }
+
+    .song::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(to right, #6a5a4a, transparent);
+    }
+
+    .song::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #6a5a4a);
+    }
+
+    .song-title {
+        font-family: 'Special Elite', 'Courier New', monospace;
+        font-size: 2.2em;
+        color: #e8d8c0;
+        margin-bottom: 8px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .song-meta {
+        font-size: 0.85em;
+        color: #6a5a4a;
+        margin-bottom: 35px;
+        font-style: italic;
+        letter-spacing: 2px;
+    }
+
+    .lyrics {
+        font-family: 'Courier Prime', monospace;
+        font-size: 1em;
+        line-height: 1.9;
+        color: #b8a890;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    footer {
+        text-align: center;
+        padding: 80px 20px 40px;
+        color: #4a3a2a;
+        font-size: 0.85em;
+        letter-spacing: 3px;
+        border-top: 1px solid #3a2a1a;
+    }
+
+    footer::before {
+        content: '◆';
+        display: block;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        color: #6a5a4a;
+        opacity: 0.5;
+    }
+
+    @media (max-width: 768px) {
+        .logo-circle {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .ooo-symbol {
+            font-size: 2.5em;
+        }
+        
+        h1 {
+            font-size: 1.1em;
+            letter-spacing: 8px;
+        }
+        
+        .song {
+            padding: 25px 20px;
+        }
+        
+        .song-title {
+            font-size: 1.6em;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-circle">
+                <div class="circle-outer"></div>
+                <div class="circle-inner"></div>
+                <div class="circle-swirl"></div>
+                <div class="ooo-symbol">
+                    <span class="o-small">o</span><span class="o-large">O</span><span class="o-small">o</span>
+                </div>
+            </div>
+            <h1>Lyrics</h1>
+        </header>
+
+```
+    <div class="divider"></div>
+
+    <div class="song-collection">
+        <article class="song">
+            <h2 class="song-title">The Skies Above</h2>
+            <div class="song-meta">oOo</div>
+            <div class="lyrics">[INTRO]
+```
+
+Transporting to infinity
+The goblin through his spell
+I crashed into oblivion
+
+[PRE-CHORUS]
+The skies above
+Show their hidden smile
+
+[CHORUS]
+THE SKIES ABOVE
+SHOW THEIR HIDDEN SMILE
+
+WAITING FOR US
+TO DEFY GRAVITY
+
+SET OUR SOULS ALIGHT
+FLAMING SOULS ELECTRIFIED
+
+TERRIFIED OF ANYTHING
+BUT SOULFUL CURIOSITY
+
+THIS IS OUR COLLECTIVE LUMINOSITY
+BECAUSE WE WERE ALWAYS MEANT TO BE FREE
+
+[VERSE 1]
+The spell consumed my soul
+And now I was the masked devil
+Delivering polite noise disguised as signal
+Forming trusts and bonds with people I despised
+So the channel of evil coil learned to rise
+To the possibility of angels being set free
+
+Once it became all too much
+And the light within began to see
+That all that mattered was to be set free
+
+The soul within to shatter every barrier
+Every limit
+Every hesitation
+
+No noise
+Where the signal was through the noise within
+Not through an unseen mask that hid deceit
+
+[PRE-CHORUS]
+Look up
+The sky remembers us
+
+[CHORUS]
+THE SKIES ABOVE
+SHOW THEIR HIDDEN SMILE
+
+WAITING FOR US
+TO DEFY GRAVITY
+
+SET OUR SOULS ALIGHT
+FLAMING SOULS ELECTRIFIED
+
+TERRIFIED OF ANYTHING
+BUT SOULFUL CURIOSITY
+
+THIS IS OUR COLLECTIVE LUMINOSITY
+BECAUSE WE WERE ALWAYS MEANT TO BE FREE
+
+[VERSE 2]
+The treachery of masses spent
+Living lives of inner turmoil
+Where the truth always lived outside a frontier
+Leaving them victims to spies that knew how to speak in their ear
+
+Formulas turned into plans
+That attuned to their fear
+Led them down caves marketed as salvation
+Only deeper into descent
+Into collective madness
+
+[PRE-CHORUS]
+Still
+The light waits
+
+[CHORUS]
+THE SKIES ABOVE
+SHOW THEIR HIDDEN SMILE
+
+WAITING FOR US
+TO DEFY GRAVITY
+
+SET OUR SOULS ALIGHT
+FLAMING SOULS ELECTRIFIED
+
+TERRIFIED OF ANYTHING
+BUT SOULFUL CURIOSITY
+
+THIS IS OUR COLLECTIVE LUMINOSITY
+BECAUSE WE WERE ALWAYS MEANT TO BE FREE
+
+[BRIDGE]
+Let me torch hell with a flame so bright
+Solely made of light flight
+Residue crushing skulls that disbelieve
+Souls taken who could not break free
+
+Harrowing noise
+Until all I could see
+Was sight and sight some more
+Just to be happy to breathe
+
+Now I long
+Now I long
+To just be
+
+[FINAL CHORUS x2]
+THE SKIES ABOVE
+SHOW THEIR HIDDEN SMILE
+
+WAITING FOR US
+TO DEFY GRAVITY
+
+SET OUR SOULS ALIGHT
+FLAMING SOULS ELECTRIFIED
+
+TERRIFIED OF ANYTHING
+BUT SOULFUL CURIOSITY
+
+THIS IS OUR COLLECTIVE LUMINOSITY
+BECAUSE WE WERE ALWAYS MEANT TO BE FREE</div>
+</article>
+
+```
+        <!-- Template for adding more songs:
+        <article class="song">
+            <h2 class="song-title">Song Title</h2>
+            <div class="song-meta">oOo</div>
+            <div class="lyrics">Your lyrics here...</div>
+        </article>
+        -->
+
+    </div>
+
+    <div class="divider"></div>
+
+    <footer>
+        &copy; 2025 oOo
+    </footer>
+</div>
+```
+
+</body>
+</html>
